@@ -1,0 +1,23 @@
+digraph arbre {
+	node [shape=record,height=.1]
+	edge [tailclip=false,arrowtail=dot,dir=both]
+	n0 [label="<left> | <value> 12 | <right>"];
+	n0:left:c -> n1:value;
+	n1 [label="<left> | <value> 6 | <right>"];
+	n1:left:c -> n2:value;
+	n2 [label="<left> | <value> 3 | <right>"];
+	n2:left:c -> n3:value;
+	n3 [label="<left> | <value> 0 | <right>"];
+	n2:right:c -> n4:value;
+	n4 [label="<left> | <value> 4 | <right>"];
+	n4:right:c -> n5:value;
+	n5 [label="<left> | <value> 5 | <right>"];
+	n0:right:c -> n6:value;
+	n6 [label="<left> | <value> 19 | <right>"];
+	n6:left:c -> n7:value;
+	n7 [label="<left> | <value> 18 | <right>"];
+	n7:left:c -> n8:value;
+	n8 [label="<left> | <value> 14 | <right>"];
+	n6:right:c -> n9:value;
+	n9 [label="<left> | <value> 22 | <right>"];
+}
